@@ -181,4 +181,31 @@ ul {
   }
 }
 
+.about {
+  max-width: 80%;
+  width: 700px;
+  margin: auto;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.about-me__title {
+  font-size: 15px;
+  margin: 10px 0;
+}
+.about-me__learning li {
+  display: inline-block;
+  float: left;
+  border: solid 1px #aaa;
+  padding: 0 5px;
+  margin: 0 5px 5px 0;
+  color: #aaa;
+  cursor: default;
+}
+.about-me__learning li small {
+  font-size: 8px;
+  line-height: 18px;
+}
+
 /*# sourceMappingURL=style.css.map */
