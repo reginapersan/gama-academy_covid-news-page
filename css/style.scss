@@ -7,6 +7,8 @@ $purple: #5A56BF;
 $dark-green: #025159;
 $green: #027373;
 $white: #fff;
+$gray: #bbb;
+$black: #000;
 
 //---font-weight
 $font-light: 300;
@@ -38,8 +40,22 @@ ul {
 .content {
     max-width: 1270px;
     margin: 0 auto;
-    padding: 0 15px;
     width: 100%;
+}
+
+//title
+.main-title {
+    font-size: 22px;
+    font-weight: $font-normal;
+    text-align: right;
+    margin: 30px 15px;
+    span {
+        color: $green;
+        font-weight: $font-bold;
+    }
+    @media(max-width: 700px) {
+        font-size: 18px;
+    }
 }
 
 //header
@@ -53,7 +69,8 @@ ul {
     &__logo {
         position: relative;
         svg {
-            max-width: 340px;
+            width: 340px;
+            max-width: 100%;
         }
         small {
             position: absolute;
@@ -76,5 +93,73 @@ ul {
                 background-color: $green;
             }
         }
+    }
+    @media(max-width: 700px) {
+        & > * {
+            flex-direction: column;
+        }
+        &__menu {
+            a {
+                background-color: $black;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//news
+.news {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    &__item {
+        padding: 45px 15px;
+        border: solid 1px $gray;
+        margin: 10px;
+        position: relative;
+        &__flag {
+            position: absolute;
+            background-color: $purple;
+            color: $white;
+            padding: 5px;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 500;
+            top: -1px;
+            left: -1px;
+            text-align: right;
+        }
+        &__title {
+            font-weight: 800;
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+        &__content {
+            font-size: 15px;
+            text-align: justify;
+            font-weight: $font-normal;
+            line-height: 25px;
+        }
+        &__button {
+            background-color: $green;
+            color: $white;
+            font-weight: $font-normal;
+            padding: 5px 10px;
+            font-size: 17px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            &:hover {
+                background-color: $dark-green;
+            }
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+    @media(max-width: 1140px ) {
+        grid-template-columns: 50% 50%;
+    }
+    @media(max-width: 700px ) {
+        grid-template-columns: 100%;
     }
 }
