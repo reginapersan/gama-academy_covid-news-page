@@ -58,6 +58,18 @@ ul {
     }
 }
 
+//buttons
+.default-button {
+    background-color: $green;
+    color: #fff;
+    font-weight: $font-normal;
+    padding: 10px 20px;
+    margin-top: 10px;
+    &:hover {
+        background-color: $dark-green;
+    }
+}
+
 //header
 .header {
     background-color: $purple;

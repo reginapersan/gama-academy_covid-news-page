@@ -44,6 +44,17 @@ ul {
   }
 }
 
+.default-button {
+  background-color: #027373;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.default-button:hover {
+  background-color: #025159;
+}
+
 .header {
   background-color: #5A56BF;
 }
