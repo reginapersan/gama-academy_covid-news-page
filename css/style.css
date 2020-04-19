@@ -66,6 +66,7 @@ ul {
   right: 22px;
   text-align: right;
   font-size: 15px;
+  color: #000;
 }
 .header__menu {
   display: flex;
@@ -197,11 +198,15 @@ ul {
 .about-me__learning li {
   display: inline-block;
   float: left;
-  border: solid 1px #aaa;
+  border: solid 1px #bbb;
   padding: 0 5px;
   margin: 0 5px 5px 0;
-  color: #aaa;
+  color: #bbb;
   cursor: default;
+}
+.about-me__learning li:hover {
+  color: #000;
+  border-color: #000;
 }
 .about-me__learning li small {
   font-size: 8px;
